@@ -1,0 +1,12 @@
+**/.grunt/
+**/scripts/vendor/
+**/build/Release/
+**/coverage/
+**/lib-cov/
+**/logs/
+**/node_modules/
+**/pids/
+**/*.log
+**/*.pid
+**/*.seed
+**/.lock-wscript
