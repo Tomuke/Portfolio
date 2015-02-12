@@ -1,5 +1,5 @@
 **/.grunt/
-**/assets/vendor/
+**/app/assets/vendor/
 **/build/Release/
 **/coverage/
 **/lib-cov/
