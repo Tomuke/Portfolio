@@ -2,38 +2,40 @@
 
 	"use strict";
 
-	angular.module('MyApp', ['ngRoute'])
+	angular.module('app', ['ui.router'])
 
-		.config(['$routeProvider', function($routeProvider){
+		.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
-			$routeProvider
+			// Routing setup
+			$urlRouterProvider.when('', '/');
+			$urlRouterProvider.otherwise('/404/');
 
-				.when('/', {
-					templateUrl: 'templates/newTicket.htm',
-					controller: 'ticketsController'
+			// Routing setup
+			$stateProvider
+
+				.state('state1', {
+				  url: '/state1',
+				  templateUrl: 'partials/state1.html',
+				  controller: ''
 				})
 
-				.when('/Projects', {
-					templateUrl: 'templates/tickets.htm',
-					controller: 'ticketsController'
+				.state('state2', {
+				  url: '/state2',
+				  templateUrl: 'partials/state2.html',
+				  controller: ''
 				})
 
-				.when('/Projects/:projectId', {
-					templateUrl: 'templates/ticketDetails.htm',
-					controller: 'ticketsController'
-				})
+				.state('state2.list', {
+				  url: '/list',
+				    templateUrl: 'partials/state2.list.html',
+				    controller: ''
+			    });
 
-				.otherwise({
-					redirectTo: '/'
-				});
-
-				$locationProvider.html5Mode({
-				    enabled: true,
-				    requireBase: false
-				});
-		}]);
-
-
-
+			// Remove # prefix
+			$locationProvider.html5Mode({
+			    enabled: true,
+			    requireBase: false
+			});
+		});
 
 })(angular);
