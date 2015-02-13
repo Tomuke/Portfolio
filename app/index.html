@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
 	<meta charset="UTF-8">
 	<title>Home | Tom Marshall</title>
 </head>
 <body>
+
+    <!--View Content-->
 	<main ui-view>
-        <p>Loading...</p>
     </main>
 
     <!-- Vendor -->
     <script type="text/javascript" src="assets/vendor/angular/angular.js"></script>
+    <script type="text/javascript" src="assets/vendor/angular-route/angular-route.js"></script>
     <script type="text/javascript" src="assets/vendor/angular-ui-router/release/angular-ui-router.js"></script>
 
     <!-- Application -->
     <script type="text/javascript" src="src/app.js"></script>
 
-    <!--Modules-->
+    <!--Projects Module-->
+    <script type="text/javascript" src="src/modules/projects/services/ProjectService.js"></script>
+    <script type="text/javascript" src="src/modules/projects/controllers/ProjectController.js"></script>
 
 </body>
 </html>

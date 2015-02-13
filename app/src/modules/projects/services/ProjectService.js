@@ -2,10 +2,9 @@
 	
 	"use strict";
 
-	angular.module('app', ['ui-router'])
+	angular.module('app')
 
 		.factory('ProjectService', function($http, $q){
-
 
 			var getProjects = function(){
 
@@ -16,6 +15,7 @@
 
 					.success(function(data, status, headers, config) {
 						deferred.resolve(data);
+
 					})
 
 					.error(function(data, status, headers, config) {
@@ -33,18 +33,19 @@
 				projects.then(
 
 					// Success
-					function(){
-						return projects;
+					function(data){
+						return data;
 					},
 
 					// Failiure
-					function(){
-						// Handle exceptions here...
+					function(reason){
+						// Handle exceptions somehow
+						console.log(reason);
 					},
 
 					// Notify
 					function(){
-						// Feedback some status update to the page here...
+						// Feedback some status to the page
 					}
 
 				);

@@ -2,10 +2,14 @@
 
 	"use strict";
 
-	angular.module('app', ['ui-router'])
+	angular.module('app')
 
-		.controller('ProjectController', function(($scope, $routeParams, ProjectService){
-			
+		.controller('ProjectController', function($scope, ProjectService){
+
+			// Undefined here WHYY?!
+			console.log(ProjectService.allProjects());
+
+			// List of all projects
 			$scope.projects = ProjectService.allProjects();
 
 		});
