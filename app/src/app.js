@@ -13,14 +13,20 @@
 			// Routing setup
 			$stateProvider
 
-				.state('state1', {
-				  url: '/state1',
+				.state('about', {
+				  url: '/About',
 				  templateUrl: 'partials/state1.html',
 				  controller: ''
 				})
 
-				.state('state2', {
-				  url: '/state2',
+				.state('projects', {
+				  url: '/Projects',
+				  templateUrl: 'partials/state2.html',
+				  controller: ''
+				})
+
+				.state('contact', {
+				  url: '/Contact',
 				  templateUrl: 'partials/state2.html',
 				  controller: ''
 				})
