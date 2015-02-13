@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="app">
 <head>
+
+    <!--Meta Data-->
 	<meta charset="UTF-8">
+
+    <!--Title-->
 	<title>Home | Tom Marshall</title>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
+    
+    <!--Header-->
+    <header>
 
-    <!--View Content-->
+        <div class="me">
+            <img src="#" alt="Author" />
+        </div>
+
+        <h1 class="title">Design and Developer</h1>
+        <p class="description">Some text about me, my background, what i'm currently doing, interetss etc.</p>
+
+        <!--Navigation-->
+        <nav>
+            <ul>
+                <li>
+                    <a ui-sref="about">About</a>
+                </li>
+                <li>
+                    <a ui-sref="projects">Projects</a>
+                </li>
+                <li>
+                    <a ui-sref="contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!--Dynamic View Content-->
 	<main ui-view>
     </main>
+    
+    <!--Footer-->
+    <footer>
+    </footer>
 
     <!-- Vendor -->
     <script type="text/javascript" src="assets/vendor/angular/angular.js"></script>
