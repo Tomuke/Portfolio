@@ -23,6 +23,11 @@
 					controller: 'ProjectController'
 				})
 
+				.state('skills', {
+					url: '/Skills',
+					templateUrl: 'src/modules/skills/views/skills-list.htm'
+				})
+
 				.state('contact', {
 					url: '/Contact',
 					templateUrl: 'src/modules/contact/views/contact.htm'

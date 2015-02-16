@@ -9,6 +9,7 @@
 	<title>Home | Tom Marshall</title>
 
     <!--Styles-->
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
@@ -17,26 +18,31 @@
     <header>
 
         <div class="me">
-            <img src="#" alt="Author" />
+            <img src="assets/img/me.png" alt="Author" />
         </div>
 
-        <h1 class="title">Design and Developer</h1>
+        <h1 class="title">Design and Developer.</h1>
         <p class="description">Some text about me, my background, what i'm currently doing, interetss etc.</p>
 
         <!--Navigation-->
-        <nav>
+        <nav class="primary-nav">
             <ul>
                 <li>
-                    <a ui-sref="about">About</a>
+                    <a ui-sref="about" title="About"><i class="fa fa-user"></i></a>
                 </li>
                 <li>
-                    <a ui-sref="projects">Projects</a>
+                    <a ui-sref="projects" title="Projects"><i class="fa fa-coffee"></i></a>
                 </li>
                 <li>
-                    <a ui-sref="contact">Contact</a>
+                    <a ui-sref="skills" title="Skills"><i class="fa fa-code"></i></a>
+                </li>
+                <li>
+                    <a ui-sref="contact" title="Contact"><i class="fa fa-send-o"></i></a>
                 </li>
             </ul>
         </nav>
+
+
 
     </header>
 
@@ -46,6 +52,30 @@
     
     <!--Footer-->
     <footer>
+        
+        <nav class="social-nav">
+            <ul>
+                <li>
+                    <a ui-sref="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a ui-sref="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a ui-sref="#" title="Instagram"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/Tomuke" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+        <article>
+            <p class="status"><i class="fa fa-bell"></i> Currently available for freelance projects</p>
+        </article>
+
+
+
     </footer>
 
     <!-- Vendor -->

@@ -5,7 +5,7 @@
 	angular.module('app')
 
 		.controller('ProjectController', function($scope, ProjectService){
-			
+
 			// Undefined here WHYY?!
 			console.log(ProjectService.allProjects());
 

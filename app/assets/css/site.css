@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Sintony);
+
 /*======================================================
 	CSS RESET
 ======================================================*/
@@ -52,28 +54,119 @@ table {
 
 html, body{
 	line-height:2em;
+	font-family: 'Sintony', Arial, sans-serif;
+	font-size:12px;
+	color:#A4ACB7;
+	background:#EEE;
 }
+
+.me, nav, .title, .description, .status{
+	margin: 0 auto;
+}
+
+.me, nav, .title, .description{
+	margin-bottom:30px;
+}
+
 
 header{
-	background:#1DD2AF;
-	padding:100px;
+	background:#2E8ECE;
+	padding:60px 60px 30px 60px;
 }
 
-main{
-	background:#F2F2F2;
-	padding:100px;
+.me{
+	width:90px;
+	background:#4AA3DF;
+	padding:8px;
+	padding-bottom:0;
+	border-radius:50px;
 }
+
+.me img{
+	width:100%;
+	height:auto;
+	border-radius:45px;
+}
+
+/*======================================================
+	BEGIN
+======================================================*/
 
 nav ul li{
 	display:inline-block;
+	margin-right:30px;
+}
+
+nav ul li:last-child{
+	margin-right: 0;
+}
+
+nav ul li a{
+	display:block;
+	font-size:30px;
+	padding:20px;
+	border-radius:4px;
+}
+
+nav ul li a:hover{
+	cursor:pointer;
+}
+
+.primary-nav{
+	width:380px;
+}
+
+.primary-nav ul li a{
+	color:#FFF;
+}
+
+.primary-nav ul li a:hover{
+	color:#2E8ECE;
+	background:#FFF;
+}
+
+.social-nav{
+	width:375px;
+}
+
+.social-nav ul li a{
+	color:#D14233;
+}
+
+.social-nav ul li a:hover{
+	color:#FFF;
+	background:#D14233;
+}
+
+h1{
+	font-size:20px;
 }
 
 .title{
 	font-size:30px; 
 	color:#FFF;
+	width:327px;
 }
 
 .description{
 	color:#FFF;
+	font-size:14px;
+	width:530px;
 }
 
+
+
+
+
+main{
+	padding:100px;
+	background:#FBFCFC;
+}
+
+footer{
+	padding:30px 30px 0 30px;
+}
+
+.status{
+	width:250px;
+}
