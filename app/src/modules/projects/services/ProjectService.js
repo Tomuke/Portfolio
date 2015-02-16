@@ -30,7 +30,7 @@
 
 				var projects = getProjects();
 
-				projects.then(
+				return projects.then(
 
 					// Success
 					function(data){
@@ -54,6 +54,7 @@
 
 			return {
 
+				// This should = data from success function?
 				allProjects: list
 
 			};
