@@ -1,15 +1,33 @@
 
 {
 	"projects": {
+
 		"project-one": {
-		"title": "<h3>Learning Angular JS</h3>",
-		"subtitle": "<h4>Starting with Application Structure</h4>",
-		"description": "<p>This is a basic project to learn the basics of Angular JS.</p>"
+		"title": "Learning Angular JS",
+		"subtitle": "Starting with Application Structure",
+		"description": "This is a basic project to learn the basics of Angular JS.",
+		"src": "assets/img/project-one.jpg"
 		},
+
 		"project-two": {
-		"title": "<h3>Project Two</h3>",
-		"subtitle": "<h4>Angular UI Router</h4>",
-		"description": "<p>This is the description for my second project.</p>"
+		"title": "Admin System",
+		"subtitle": "Creating some administration system",
+		"description": "This is the description for my second project.",
+		"src": "assets/img/project-two.jpg"
+		},
+
+		"project-three": {
+		"title": "Project Three",
+		"subtitle": "Creating something else",
+		"description": "This is the description for my third project.",
+		"src": "assets/img/project-one.jpg"
+		},
+
+		"project-Four": {
+		"title": "Project Four",
+		"subtitle": "Creating something else",
+		"description": "This is the description for my fourth project.",
+		"src": "assets/img/project-two.jpg"
 		}
 	}
 }

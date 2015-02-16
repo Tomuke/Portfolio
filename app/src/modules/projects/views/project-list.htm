@@ -1,9 +1,14 @@
 <h1>Projects</h1>
 
-<ul ng-repeat="project in projects">
-
-	<li>{{ project.title }}</li>
-	<li>{{ project.subtitle }}</li>
-	<li>{{ project.description }}</li>
+<ul class="projects" ng-repeat="project in projects">
+	
+	<li class="project">
+		<div class="project-image">
+			<img src="{{ project.src }}" alt="{{ project.title }}" />
+		</div>
+		<h2 class="project-title">{{ project.title }}</h2>
+		<p class="project-description">{{ project.description }}</p>
+		<a ui-sref=".view">Read more...</a>
+	</li>
 	
 </ul>

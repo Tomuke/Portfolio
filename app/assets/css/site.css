@@ -60,7 +60,7 @@ html, body{
 	background:#EEE;
 }
 
-.me, nav, .title, .description, .status{
+.me, nav, .title, .description, .status, .main-container{
 	margin: 0 auto;
 }
 
@@ -89,7 +89,7 @@ header{
 }
 
 /*======================================================
-	BEGIN
+	Navigation
 ======================================================*/
 
 nav ul li{
@@ -154,13 +154,54 @@ h1{
 	width:530px;
 }
 
+/*======================================================
+	Project Summary
+======================================================*/
+
+.projects{
+	display:inline-block;
+}
+
+.project{
+	width:260px;
+}
+
+.project-image{
+	width:250px;
+	height:150px;
+	overflow:hidden;
+	padding:5px;
+	background:#EEE;
+	border-radius:4px;
+}
+
+.project-image img{
+	width:100%;
+	height:100%;
+}
+
+.project-title{
+	font-size:16px;
+	font-weight:bold;
+}
+
+.project-subtitle{
+	font-style:italic;
+	font-weight:normal;
+}
+
 
 
 
 
 main{
+			min-width:530px;
+	max-width:1000px;
+}
+
+.main-container{
 	padding:100px;
-	background:#FBFCFC;
+		background:#FBFCFC;
 }
 
 footer{
