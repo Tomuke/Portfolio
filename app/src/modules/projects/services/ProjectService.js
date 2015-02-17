@@ -6,6 +6,8 @@
 
 		.factory('ProjectService', function($http, $q){
 
+			var projects = null;
+
 			var getAllProjects = function(){
 
 				var deferred = $q.defer();
@@ -14,6 +16,7 @@
 				$http.get('api/projects.json')
 
 					.success(function(data, status, headers, config) {
+						projects = data.projects;
 						deferred.resolve(data.projects);
 					})
 
@@ -25,9 +28,19 @@
 
 			};
 
-			return {
+			var getProjectBySlug = function(slug){
 
-				getAllProjects: getAllProjects
+				// Get project by it's unique project name
+				if(projects[slug])
+				{
+					return projects[slug];
+				}
+
+			};
+
+			return {
+				getAllProjects: getAllProjects,
+				getProjectBySlug: getProjectBySlug
 
 			};
 

@@ -60,7 +60,7 @@ html, body{
 	background:#EEE;
 }
 
-.me, nav, .title, .description, .status, .main-container{
+.me, nav, .title, .description, .status, .main-container, .admin-gateway, main{
 	margin: 0 auto;
 }
 
@@ -158,15 +158,32 @@ h1{
 	Project Summary
 ======================================================*/
 
-.projects{
+.project{
 	display:inline-block;
+	width:260px;
+	margin-right:20px;
 }
 
-.project{
-	width:260px;
+.project:last-child{
+	margin-right:0;
 }
+
+.project-summary{
+	width:250px;
+	padding:5px;
+}
+
+/* .project-image{
+	width:250px;
+	height:150px;
+	overflow:hidden;
+	padding:5px;
+	background:#EEE;
+	border-radius:4px;
+} */
 
 .project-image{
+	display:block;
 	width:250px;
 	height:150px;
 	overflow:hidden;
@@ -190,13 +207,30 @@ h1{
 	font-weight:normal;
 }
 
+.read-more{
+	display:block;
+	padding:10px;
+	background:#2CC36B;
+	color:#FFF;
+	text-decoration:none;
+	border-radius:4px;
+	box-shadow: 0 4px 0 #2eAA71;
+}
 
+.read-more i{
+	padding-right:10px;
+	padding:0 10px 0 10px;
+}
+
+.read-more:hover{
+	background:#BF3428;
+}
 
 
 
 main{
-			min-width:530px;
-	max-width:1000px;
+	min-width:270px;
+	max-width:1105px;
 }
 
 .main-container{
@@ -211,3 +245,18 @@ footer{
 .status{
 	width:250px;
 }
+
+.admin-gateway{
+	display:block;
+	color:#A4ACB7;
+	font-size:30px;
+	padding:20px;
+	width:20px;
+	border-radius:4px;
+}
+
+.admin-gateway:hover{
+	color:#D14233;
+	cursor:pointer;
+}
+
