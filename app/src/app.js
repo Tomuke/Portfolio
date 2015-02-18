@@ -7,18 +7,18 @@
 		.config(function($stateProvider, $urlRouterProvider) {
 
 			// No matches 
-			$urlRouterProvider.otherwise("/Projects");
+			$urlRouterProvider.otherwise("/About/");
 
 			// Routing setup
 			$stateProvider
 
 				.state('about', {
-					url: '/About',
+					url: '/About/',
 					templateUrl: 'src/modules/about/views/about.htm'
 				})
 
 				.state('projects', {
-					url: '/Projects',
+					url: '/Projects/',
 					templateUrl: 'src/modules/projects/views/project-list.htm',
 					controller: 'ProjectController'
 				})
@@ -30,17 +30,17 @@
 				})
 
 				.state('skills', {
-					url: '/Skills',
+					url: '/Skills/',
 					templateUrl: 'src/modules/skills/views/skills-list.htm'
 				})
 
 				.state('contact', {
-					url: '/Contact',
+					url: '/Contact/',
 					templateUrl: 'src/modules/contact/views/contact.htm'
 				})
 
 				.state('login', {
-					url: '/Login',
+					url: '/Login/',
 					templateUrl: 'src/modules/login/views/login.htm'
 				})
 		});

@@ -223,13 +223,20 @@ h1{
 }
 
 .read-more:hover{
-	background:#BF3428;
+	background:#2eAA71;
+}
+
+
+
+.project-image-large{
+	font-size:300px;
+	color:#A4ACB7;
 }
 
 
 
 main{
-	min-width:270px;
+	min-width:275px;
 	max-width:1105px;
 }
 
@@ -260,3 +267,32 @@ footer{
 	cursor:pointer;
 }
 
+input[type="text"], input[type="password"], textarea{
+	border:1px solid #DDD;
+	padding:10px;
+	border-radius:4px;
+	width:250px;
+	font-family: 'Sintony', Arial, sans-serif;
+	font-size:12px;
+}
+
+input[type="submit"]{
+	padding:10px;
+	background:#2CC36B;
+	color:#FFF;
+	border-radius:4px;
+	box-shadow: 0 4px 0 #2eAA71;
+	border: 1px solid #2CC36B;
+}
+
+input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+.pull-left{
+	float:left;
+}
+
+.clear{
+	clear:both;
+}
