@@ -1,0 +1,41 @@
+nav{
+	width:380px;
+
+	ul li{
+		display:inline-block;
+		margin-right:30px;
+
+		:last-child{
+			margin-right: 0;
+		}
+
+		a{
+			display:block;
+			font-size:30px;
+			padding:20px;
+			border-radius:4px;
+
+			:hover{
+				cursor:pointer;
+			}
+		}
+	}
+}
+
+.primary-nav ul li a{
+	color:#FFF;
+
+	:hover{
+		color:#2E8ECE;
+		background:#FFF;
+	}
+}
+
+.social-nav ul li a{
+	color:#D14233;
+
+	:hover{
+		color:#FFF;
+		background:#D14233;
+	}
+}

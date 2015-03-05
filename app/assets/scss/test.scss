@@ -1,12 +1,8 @@
-.me
-	width:90px;
-	background:#4AA3DF;
-	padding:8px;
-	padding-bottom:0;
-	border-radius:50px;
-
-	img
-		border: 1px solid red;
-
-		:hover
-			border:3px solid green;
+nav ul li
+	display: inline-block
+	margin-right:30px
+	:last-child
+		margin-right:0
+	a
+		display:block
+		font-size:30px
