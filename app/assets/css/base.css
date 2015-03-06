@@ -1,0 +1,211 @@
+@import url(http://fonts.googleapis.com/css?family=Sintony);
+/* line 4, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/vendor/neat/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 11, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/vendor/neat/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/* line 1, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* line 10, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 14, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 18, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 22, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 27, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_reset.scss */
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+/* line 34, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_reset.scss */
+q:before, q:after {
+  content: "";
+  content: none; }
+
+/* line 40, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 1, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_header.scss */
+header {
+  background: #1D5076;
+  padding: 60px 60px 30px 60px; }
+
+/* line 6, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_header.scss */
+.me {
+  width: 90px;
+  background: #2C79B3;
+  padding: 8px;
+  padding-bottom: 0;
+  border-radius: 50px; }
+  /* line 13, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_header.scss */
+  .me img {
+    width: 100%;
+    height: auto;
+    border-radius: 45px; }
+
+/* line 20, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_header.scss */
+h1 {
+  font-size: 20px; }
+
+/* line 24, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_header.scss */
+h2 {
+  color: #666;
+  font-size: 20px; }
+
+/* line 29, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_header.scss */
+.title {
+  font-size: 30px;
+  color: #FFF;
+  width: 327px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.15); }
+
+/* line 36, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_header.scss */
+.description {
+  color: #FFF;
+  font-size: 14px;
+  width: 530px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.15); }
+
+/* line 1, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_navigation.scss */
+nav {
+  width: 380px; }
+  /* line 4, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_navigation.scss */
+  nav ul li {
+    display: inline-block;
+    margin-right: 30px; }
+    /* line 8, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_navigation.scss */
+    nav ul li:last-child {
+      margin-right: 0; }
+    /* line 12, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_navigation.scss */
+    nav ul li a {
+      display: block;
+      font-size: 30px;
+      padding: 20px;
+      border-radius: 4px; }
+      /* line 18, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_navigation.scss */
+      nav ul li a:hover {
+        cursor: pointer; }
+
+/* line 25, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_navigation.scss */
+.primary-nav ul li a {
+  color: #FFF; }
+  /* line 28, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_navigation.scss */
+  .primary-nav ul li a:hover {
+    color: #2C79B3;
+    background: #FFF; }
+
+/* line 34, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_navigation.scss */
+.social-nav ul li a {
+  color: #8BB93F; }
+  /* line 37, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_navigation.scss */
+  .social-nav ul li a:hover {
+    color: #FFF;
+    background: #8BB93F; }
+
+/* line 1, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_footer.scss */
+footer {
+  padding: 30px 30px 0 30px;
+  background: #EEE; }
+
+/* line 6, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_footer.scss */
+.status {
+  width: 250px; }
+
+/* line 10, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_footer.scss */
+.admin-gateway {
+  display: block;
+  color: #A4ACB7;
+  font-size: 30px;
+  padding: 20px;
+  width: 20px;
+  border-radius: 4px; }
+  /* line 18, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/_footer.scss */
+  .admin-gateway:hover {
+    color: #8BB93F;
+    cursor: pointer;
+    /*#D14233*/ }
+
+/* line 13, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/base.scss */
+html, body {
+  line-height: 2em;
+  font-family: 'Sintony', Arial, sans-serif;
+  font-size: 12px;
+  color: #A4ACB7;
+  background: #EEE; }
+
+/* line 21, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/base.scss */
+.me, nav, .title, .description {
+  margin-bottom: 30px; }
+
+/* line 25, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/base.scss */
+.main-container {
+  padding: 100px;
+  background: #FBFCFC; }
+
+/* line 30, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/base.scss */
+.me, h1, .description, .primary-nav, .social-nav, main, .status, .admin-gateway {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 20, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/vendor/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  .me::after, h1::after, .description::after, .primary-nav::after, .social-nav::after, main::after, .status::after, .admin-gateway::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/* line 34, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/base.scss */
+article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  /* line 87, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/vendor/neat/app/assets/stylesheets/grid/_span-columns.scss */
+  article:last-child {
+    margin-right: 0; }
+
+/* line 38, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/base.scss */
+.project {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  /* line 87, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/vendor/neat/app/assets/stylesheets/grid/_span-columns.scss */
+  .project:last-child {
+    margin-right: 0; }
+  /* line 78, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/vendor/neat/app/assets/stylesheets/grid/_omega.scss */
+  .project:nth-child(3n) {
+    margin-right: 0; }
+  /* line 83, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/vendor/neat/app/assets/stylesheets/grid/_omega.scss */
+  .project:nth-child(3n+1) {
+    clear: left; }
+
+/* line 45, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/base.scss */
+.project-image img {
+  width: 100%;
+  height: auto; }

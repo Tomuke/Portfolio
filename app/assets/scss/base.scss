@@ -1,4 +1,52 @@
-/* base.scss */
+@import '../vendor/bourbon/app/assets/stylesheets/_bourbon.scss';
+@import '../vendor/neat/app/assets/stylesheets/_neat.scss';
 
+@import 'variables';
+
+@import url(http://fonts.googleapis.com/css?family=Sintony);
+
+@import 'reset';
 @import 'header';
 @import 'navigation';
+@import 'footer';
+
+html, body{
+	line-height:2em;
+	font-family: 'Sintony', Arial, sans-serif;
+	font-size:12px;
+	color:#A4ACB7;
+	background:#EEE;
+}
+
+.me, nav, .title, .description{
+	margin-bottom:30px;
+}
+
+.main-container{
+	padding:100px;
+	background:#FBFCFC;
+}
+
+.me, h1, .description, .primary-nav, .social-nav, main, .status, .admin-gateway{
+	@include outer-container;
+}
+
+article{
+	@include span-columns(4);
+}
+
+.project{
+	@include span-columns(4);
+  	@include omega(3n);
+}
+
+.project-image{
+
+	img{
+		width:100%;
+		height:auto;
+	}
+
+}
+
+

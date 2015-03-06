@@ -1,13 +1,10 @@
-<h1>Projects</h1>
-
 <ul>
 	
 	<li class="project" ng-repeat="(slug, project) in projects">
 
-
-			<a ui-sref="View({ slug: slug })" class="project-image">
-				<img src="{{ project.src }}" alt="{{ project.title }}" />
-			</a>
+		<a ui-sref="View({ slug: slug })" class="project-image">
+			<img src="{{ project.src }}" alt="{{ project.title }}" />
+		</a>
 
 		
 		<div class="project-summary">

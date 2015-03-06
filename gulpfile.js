@@ -43,10 +43,9 @@ gulp.task('sass', function (){
     // Sass options - make the output compressed and add the source map
     // Also pull the include path from the paths object
     .pipe(sass({
-        outputStyle: 'compressed',
+        outputStyle: 'expanded',
         sourceComments: 'map',
-        includePaths : [paths.styles.src],
-        indentedSyntax: true
+        includePaths : [paths.styles.src]
     }))
     
     // If there is an error, don't stop compiling but use the custom displayError function

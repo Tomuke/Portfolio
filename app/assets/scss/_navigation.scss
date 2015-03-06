@@ -5,7 +5,7 @@ nav{
 		display:inline-block;
 		margin-right:30px;
 
-		:last-child{
+		&:last-child{
 			margin-right: 0;
 		}
 
@@ -15,7 +15,7 @@ nav{
 			padding:20px;
 			border-radius:4px;
 
-			:hover{
+			&:hover{
 				cursor:pointer;
 			}
 		}
@@ -25,17 +25,17 @@ nav{
 .primary-nav ul li a{
 	color:#FFF;
 
-	:hover{
-		color:#2E8ECE;
+	&:hover{
+		color:#2C79B3;
 		background:#FFF;
 	}
 }
 
 .social-nav ul li a{
-	color:#D14233;
+	color:#8BB93F;
 
-	:hover{
+	&:hover{
 		color:#FFF;
-		background:#D14233;
+		background:#8BB93F;
 	}
 }
