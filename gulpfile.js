@@ -10,6 +10,12 @@ var paths = {
         src: './app/assets/scss',
         files: './app/assets/scss/*.scss',
         dest: './app/assets/css'
+    },
+
+    scripts: {
+        src: './app/src',
+        files: './app/src/*.js',
+        dest: './app/src'
     }
 
 };
@@ -58,10 +64,31 @@ gulp.task('sass', function (){
 
 });
 
+gulp.task('scripts', function(){
+
+    gulp.src(ptahs.scripts.files)
+
+    // Name of concat js file
+    .pipe(concat('all.js'))
+
+    // Location of the new concat file
+    .pipe(gulp.dest(paths.scripts.dest))
+
+    // Rename to .min
+    .pipe(rename('all.min.js'))
+
+    // Minify the concat file
+    .pipe(uglify())
+
+    // Location of the minified version 
+    .pipe(gulp.dest(paths.scripts.dest));
+
+});
+
 
 // This is the default task - which is run when `gulp` is run
 // The tasks passed in as an array are run before the tasks within the function
-gulp.task('default', ['sass'], function() { 
+gulp.task('default', ['sass', 'scripts'], function() { 
 
     // Watch the files in the paths object, and when there is a change, fun the functions in the array
     gulp.watch(paths.styles.files, ['sass'])
@@ -70,5 +97,7 @@ gulp.task('default', ['sass'], function() {
     .on('change', function(evt) {
         console.log('[watcher] File ' + evt.path.replace(/.*(?=scss)/,'') + ' was ' + evt.type + ', compiling...');
     });
+
+    gulp.watch(paths.scripts.files, ['scripts']);
 
 });
