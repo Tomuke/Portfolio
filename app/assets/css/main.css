@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Sintony);
 /* Third-party */
 /* line 4, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/vendor/neat/app/assets/stylesheets/grid/_box-sizing.scss */
 html {
@@ -54,6 +53,133 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* line 45, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/partials/_reset.scss */
+textarea {
+  resize: none; }
+
+/* @import url(http://fonts.googleapis.com/css?family=Sintony); */
+@font-face {
+  font-family: "Sintony-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/sintony/Sintony-Regular"); }
+
+/* Custom Font Faces */
+@font-face {
+  font-family: "Sanspro-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/sourcesanspro/sourcesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro/sourcesanspro-regular-webfont.woff") format("woff"), url("../fonts/sourcesanspro/sourcesanspro-regular-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro/sourcesanspro-regular-webfont.svg#Sanspro-Regular") format("svg"); }
+
+@font-face {
+  font-family: "Sanspro-Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/sourcesanspro/sourcesanspro-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro/sourcesanspro-italic-webfont.woff") format("woff"), url("../fonts/sourcesanspro/sourcesanspro-italic-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro/sourcesanspro-italic-webfont.svg#Sanspro-Italic") format("svg"); }
+
+@font-face {
+  font-family: "Sanspro-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/sourcesanspro/sourcesanspro-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro/sourcesanspro-light-webfont.woff") format("woff"), url("../fonts/sourcesanspro/sourcesanspro-light-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro/sourcesanspro-light-webfont.svg#Sanspro-light") format("svg"); }
+
+@font-face {
+  font-family: "Sanspro-Light-Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/sourcesanspro/sourcesanspro-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro/sourcesanspro-lightitalic-webfont.woff") format("woff"), url("../fonts/sourcesanspro/sourcesanspro-lightitalic-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro/sourcesanspro-lightitalic-webfont.svg#Sanspro-light-Italic") format("svg"); }
+
+@font-face {
+  font-family: "Sanspro-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/sourcesanspro/sourcesanspro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro/sourcesanspro-bold-webfont.woff") format("woff"), url("../fonts/sourcesanspro/sourcesanspro-bold-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro/sourcesanspro-bold-webfont.svg#Sanspro-Bold") format("svg"); }
+
+@font-face {
+  font-family: "Sanspro-Bold-Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/sourcesanspro/sourcesanspro-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro/sourcesanspro-bolditalic-webfont.woff") format("woff"), url("../fonts/sourcesanspro/sourcesanspro-bolditalic-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro/sourcesanspro-bolditalic-webfont.svg#Sanspro-Bold-Italic") format("svg"); }
+
+/* line 58, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/partials/_typography.scss */
+h1 {
+  font-family: "Sanspro-Light";
+  font-size: 30px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.15); }
+
+/* line 64, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/partials/_typography.scss */
+h2 {
+  font-family: "Sanspro-Light";
+  color: #666;
+  font-size: 20px; }
+
+/* line 70, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/partials/_typography.scss */
+p, input, textarea {
+  font-family: "Sanspro-Regular";
+  font-size: 12px; }
+
+/* line 79, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/partials/_typography.scss */
+.description {
+  font-family: "Sanspro-Light-Italic";
+  font-size: 14px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.15); }
+
+/* line 1, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/partials/_buttons.scss */
+.button {
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 15px; }
+  /* line 6, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/partials/_buttons.scss */
+  .button i {
+    margin-right: 10px; }
+  /* line 10, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/partials/_buttons.scss */
+  .button:hover {
+    cursor: pointer; }
+
+/* line 16, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/partials/_buttons.scss */
+.read-more {
+  background: #8BB93F;
+  color: #FBFCFC;
+  width: 100%; }
+
+/* line 2, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/partials/_forms */
+form input, form textarea {
+  padding: 10px;
+  margin-bottom: 10px; }
+/* line 7, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/partials/_forms */
+form textarea {
+  height: 150px; }
+/* line 11, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/partials/_forms */
+form .form-left {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  /* line 87, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/vendor/neat/app/assets/stylesheets/grid/_span-columns.scss */
+  form .form-left:last-child {
+    margin-right: 0; }
+/* line 15, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/partials/_forms */
+form .form-right {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-right: 0; }
+  /* line 87, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/vendor/neat/app/assets/stylesheets/grid/_span-columns.scss */
+  form .form-right:last-child {
+    margin-right: 0; }
+/* line 20, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/partials/_forms */
+form .form-full {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-right: 0; }
+  /* line 87, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/vendor/neat/app/assets/stylesheets/grid/_span-columns.scss */
+  form .form-full:last-child {
+    margin-right: 0; }
+
+/* Layout */
 /* line 1, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/partials/_header.scss */
 header {
   background: #1D5076;
@@ -73,27 +199,16 @@ header {
     border-radius: 45px; }
 
 /* line 20, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/partials/_header.scss */
-h1 {
-  font-size: 20px; }
-
-/* line 24, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/partials/_header.scss */
-h2 {
-  color: #666;
-  font-size: 20px; }
-
-/* line 29, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/partials/_header.scss */
 .title {
-  font-size: 30px;
   color: #FFF;
-  width: 327px;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.15); }
+  width: 280px;
+  text-align: center; }
 
-/* line 36, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/partials/_header.scss */
+/* line 26, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/partials/_header.scss */
 .description {
   color: #FFF;
-  font-size: 14px;
-  width: 530px;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.15); }
+  width: 470px;
+  text-align: center; }
 
 /* line 1, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/partials/_navigation.scss */
 nav {
@@ -154,7 +269,8 @@ footer {
     cursor: pointer;
     /*#D14233*/ }
 
-/* line 18, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/main.scss */
+/* Page components */
+/* line 22, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/main.scss */
 html, body {
   line-height: 2em;
   font-family: 'Sintony', Arial, sans-serif;
@@ -162,16 +278,16 @@ html, body {
   color: #A4ACB7;
   background: #EEE; }
 
-/* line 26, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/main.scss */
+/* line 30, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/main.scss */
 .me, nav, .title, .description {
   margin-bottom: 30px; }
 
-/* line 30, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/main.scss */
+/* line 34, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/main.scss */
 .main-container {
   padding: 100px;
   background: #FBFCFC; }
 
-/* line 35, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/main.scss */
+/* line 39, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/main.scss */
 .me, h1, .description, .primary-nav, .social-nav, main, .status, .admin-gateway {
   max-width: 68em;
   margin-left: auto;
@@ -182,7 +298,7 @@ html, body {
     content: "";
     display: table; }
 
-/* line 39, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/main.scss */
+/* line 43, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/main.scss */
 article {
   float: left;
   display: block;
@@ -192,7 +308,7 @@ article {
   article:last-child {
     margin-right: 0; }
 
-/* line 43, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/main.scss */
+/* line 47, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/main.scss */
 .project {
   float: left;
   display: block;
@@ -208,7 +324,7 @@ article {
   .project:nth-child(3n+1) {
     clear: left; }
 
-/* line 50, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/main.scss */
+/* line 54, C:/Users/tom.marshall/Documents/GitHub/Portfolio/app/assets/scss/main.scss */
 .project-image img {
   width: 100%;
   height: auto; }

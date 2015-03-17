@@ -1,1 +1,83 @@
-@import url(http://fonts.googleapis.com/css?family=Sintony);
+/* @import url(http://fonts.googleapis.com/css?family=Sintony); */
+@font-face {
+    font-family: "Sintony-Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/sintony/Sintony-Regular");
+}
+
+
+/* Custom Font Faces */
+@font-face {
+    font-family: "Sanspro-Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/sourcesanspro/sourcesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro/sourcesanspro-regular-webfont.woff") format("woff"), url("../fonts/sourcesanspro/sourcesanspro-regular-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro/sourcesanspro-regular-webfont.svg#Sanspro-Regular") format("svg");
+}
+
+
+@font-face {
+    font-family: "Sanspro-Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/sourcesanspro/sourcesanspro-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro/sourcesanspro-italic-webfont.woff") format("woff"), url("../fonts/sourcesanspro/sourcesanspro-italic-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro/sourcesanspro-italic-webfont.svg#Sanspro-Italic") format("svg");
+}
+
+
+@font-face {
+    font-family: "Sanspro-Light";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/sourcesanspro/sourcesanspro-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro/sourcesanspro-light-webfont.woff") format("woff"), url("../fonts/sourcesanspro/sourcesanspro-light-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro/sourcesanspro-light-webfont.svg#Sanspro-light") format("svg");
+}
+
+@font-face {
+    font-family: "Sanspro-Light-Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/sourcesanspro/sourcesanspro-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro/sourcesanspro-lightitalic-webfont.woff") format("woff"), url("../fonts/sourcesanspro/sourcesanspro-lightitalic-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro/sourcesanspro-lightitalic-webfont.svg#Sanspro-light-Italic") format("svg");
+}
+
+
+@font-face {
+    font-family: "Sanspro-Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/sourcesanspro/sourcesanspro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro/sourcesanspro-bold-webfont.woff") format("woff"), url("../fonts/sourcesanspro/sourcesanspro-bold-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro/sourcesanspro-bold-webfont.svg#Sanspro-Bold") format("svg");
+}
+
+@font-face {
+    font-family: "Sanspro-Bold-Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/sourcesanspro/sourcesanspro-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro/sourcesanspro-bolditalic-webfont.woff") format("woff"), url("../fonts/sourcesanspro/sourcesanspro-bolditalic-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro/sourcesanspro-bolditalic-webfont.svg#Sanspro-Bold-Italic") format("svg");
+}
+
+
+
+h1{
+	font-family: "Sanspro-Light";
+	font-size:30px; 
+	text-shadow:0 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+h2{
+	font-family: "Sanspro-Light";
+	color:#666;
+	font-size:20px;
+}
+
+p, input, textarea{
+	font-family: "Sanspro-Regular";
+	font-size:12px; 
+}
+
+a{
+	
+}
+
+.description{
+	font-family: "Sanspro-Light-Italic";
+	font-size:14px;
+	text-shadow:0 2px 2px rgba(0, 0, 0, 0.15);
+}

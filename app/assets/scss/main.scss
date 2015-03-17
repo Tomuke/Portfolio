@@ -10,17 +10,21 @@
 
 @import 'partials/typography';
 @import 'partials/buttons';
+@import 'partials/forms';
 
+/* Layout */
 @import 'partials/header';
 @import 'partials/navigation';
 @import 'partials/footer';
 
+/* Page components */
+
 html, body{
 	line-height:2em;
-	font-family: 'Sintony', Arial, sans-serif;
+	font-family: $body-font;
 	font-size:12px;
-	color:#A4ACB7;
-	background:#EEE;
+	color:$font-color;
+	background:$footer-bg;
 }
 
 .me, nav, .title, .description{
@@ -29,7 +33,7 @@ html, body{
 
 .main-container{
 	padding:100px;
-	background:#FBFCFC;
+	background:$content-white;
 }
 
 .me, h1, .description, .primary-nav, .social-nav, main, .status, .admin-gateway{
@@ -51,7 +55,6 @@ article{
 		width:100%;
 		height:auto;
 	}
-
 }
 
 

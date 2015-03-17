@@ -1,0 +1,24 @@
+form{
+	input, textarea{
+		padding:10px;
+		margin-bottom:10px;
+	}
+
+	textarea{
+		height:150px;
+	}
+
+	.form-left{
+		@include span-columns(6);
+	}
+
+	.form-right{
+		@include span-columns(6);
+		@include omega();
+	}
+
+	.form-full{
+		@include span-columns(12);
+		@include omega();
+	}
+}

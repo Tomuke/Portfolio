@@ -1,7 +1,9 @@
 // Definitions
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-
+var concat = require('gulp-concat');
+var rename = require('gulp-rename');
+var uglify = require('gulp-uglify');
 
 // Paths setup
 var paths = {
@@ -15,7 +17,7 @@ var paths = {
     scripts: {
         src: './app/src',
         files: './app/src/*.js',
-        dest: './app/src'
+        dest: './app/dist'
     }
 
 };
@@ -49,8 +51,7 @@ gulp.task('sass', function (){
     // Sass options - make the output compressed and add the source map
     // Also pull the include path from the paths object
     .pipe(sass({
-        outputStyle: 'expanded',
-        sourceComments: 'map',
+        outputStyle: 'compressed',
         includePaths : [paths.styles.src]
     }))
     
@@ -66,7 +67,7 @@ gulp.task('sass', function (){
 
 gulp.task('scripts', function(){
 
-    gulp.src(ptahs.scripts.files)
+    gulp.src(paths.scripts.files)
 
     // Name of concat js file
     .pipe(concat('all.js'))
