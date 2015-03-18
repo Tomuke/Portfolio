@@ -17,6 +17,8 @@
 @import 'partials/navigation';
 @import 'partials/footer';
 
+@import 'partials/projects';
+
 /* Page components */
 
 html, body{
@@ -43,18 +45,4 @@ html, body{
 article{
 	@include span-columns(4);
 }
-
-.project{
-	@include span-columns(4);
-  	@include omega(3n);
-}
-
-.project-image{
-
-	img{
-		width:100%;
-		height:auto;
-	}
-}
-
 

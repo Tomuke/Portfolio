@@ -2,6 +2,9 @@
 	border-radius:4px;
 	text-decoration:none;
 	padding:15px;
+	box-shadow: 0 5px 0 #74933E;
+	transition: all .1s linear;
+	border:0;
 
 	i{
 		margin-right:10px;
@@ -9,6 +12,10 @@
 
 	&:hover{
 		cursor:pointer;
+	}
+	&:active {
+	  box-shadow: 0 2px 0 #74933E;
+	  transform: translateY(3px);
 	}
 }
 

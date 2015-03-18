@@ -10,15 +10,24 @@ form{
 
 	.form-left{
 		@include span-columns(6);
+		@include media($mobile) {
+	      @include span-columns(4);
+	    }
 	}
 
 	.form-right{
 		@include span-columns(6);
 		@include omega();
+		@include media($mobile) {
+	      @include span-columns(4);
+	    }
 	}
 
 	.form-full{
 		@include span-columns(12);
 		@include omega();
+		@include media($mobile) {
+	      @include span-columns(4);
+	    }
 	}
 }
