@@ -1,0 +1,19 @@
+{
+	{
+		"id": "1",
+		"status": "vacant",
+		"description": "Currently available for freelance projects"
+	},
+
+	{
+		"id": "2",
+		"status": "busy",
+		"description": "Currently tied up with other projects. Please drop me an email and I will get back to you as soon as possible"
+	},
+
+	{
+		"id": "3",
+		"status": "closed",
+		"description": "Currently not taking anymore projects on in the near future"
+	}
+}
