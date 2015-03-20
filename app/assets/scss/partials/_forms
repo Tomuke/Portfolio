@@ -31,3 +31,51 @@ form{
 	    }
 	}
 }
+
+.login-form{
+	@include span-columns(6);
+	@include shift(3);
+
+	div{
+		@include span-columns(12);
+	}
+
+	input {
+		width:100%;
+	}
+
+	.username, .password{
+		position: relative;
+	}
+
+	.username:before{
+		content: "\f007";
+	    font-family: FontAwesome;
+	    font-style: normal;
+	    font-weight: normal;
+	    text-decoration: inherit;
+        color: #DDD;
+    	font-size: 16px;
+
+		position: absolute;
+		top:-2px;
+		right:20px;
+		z-index:5;
+	}
+
+    .password:before{
+		content: "\f023";
+
+		font-family: FontAwesome;
+	    font-style: normal;
+	    font-weight: normal;
+	    text-decoration: inherit;
+        color: #DDD;
+    	font-size: 16px;
+
+		position: absolute;
+		top:-2px;
+		right:20px;
+		z-index:5;
+	}
+}

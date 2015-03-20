@@ -53,8 +53,6 @@
     src: url("../fonts/sourcesanspro/sourcesanspro-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro/sourcesanspro-bolditalic-webfont.woff") format("woff"), url("../fonts/sourcesanspro/sourcesanspro-bolditalic-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro/sourcesanspro-bolditalic-webfont.svg#Sanspro-Bold-Italic") format("svg");
 }
 
-
-
 h1{
 	font-family: "Sanspro-Light";
 	font-size:30px; 
@@ -69,11 +67,8 @@ h2{
 
 p, input, textarea{
 	font-family: "Sanspro-Regular";
-	font-size:12px; 
-}
-
-a{
-	
+	font-size:12px;
+    color: $dark-grey;
 }
 
 .description{
