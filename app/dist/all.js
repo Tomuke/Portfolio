@@ -4,7 +4,7 @@
 
 	angular.module('app', ['ui.router'])
 
-		.config(function($stateProvider, $urlRouterProvider) {
+		.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
 			// No matches 
 			$urlRouterProvider.otherwise("/About/");
@@ -42,7 +42,7 @@
 				.state('login', {
 					url: '/Login/',
 					templateUrl: 'src/modules/login/views/login.htm'
-				})
+				});
 		});
 
 })(angular);

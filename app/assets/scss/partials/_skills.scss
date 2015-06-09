@@ -1,0 +1,27 @@
+.skill{
+	@include span-columns(3);
+  	@include omega(4n);
+  	margin-bottom:30px;
+
+	h2{
+		text-align:center;
+		padding:10px;
+		border:1px solid #222;
+	}
+
+	.skill-container{
+		height:150px;
+		border:1px solid #222;
+
+		.ratings{
+			li{
+				display: inline-block;
+
+				i{
+					color:#f1c40f;
+					font-size:18px;
+				}
+			}
+		}
+	}
+}
