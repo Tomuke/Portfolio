@@ -43,5 +43,43 @@
 			"description": "This is the description for my fourth project.",
 			"src": "assets/img/project-one.jpg"
 		}
+	},
+
+	"skills": {
+
+		"client-side": {
+
+			"html":{
+				"title": "HTML 5",
+				"knowledge":[],
+				"rating": "5"
+			},
+
+			"css": {
+				"title": "CSS",
+				"knowledge": [],
+				"rating": "5"
+			},
+
+			"javascript": {
+				"title": "JavaScript",
+				"knowledge": [],
+				"rating": "5"
+			},
+
+			"jquery": {
+				"title": "jQuery",
+				"knowledge": [],
+				"rating": "5"
+			}
+		},
+
+		"server-side": {
+
+		},
+
+		"development-dependancies": {
+
+		}
 	}
 }

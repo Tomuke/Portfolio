@@ -1,19 +1,33 @@
 .skill{
 	@include span-columns(3);
   	@include omega(4n);
+
+  	@include media($mobile) {
+      @include span-columns(1);
+      @include omega();
+    }
+
   	margin-bottom:30px;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+	background: #FFFFFF;
 
 	h2{
 		text-align:center;
 		padding:10px;
-		border:1px solid #222;
+		background-color: #E4E4E4;
 	}
 
 	.skill-container{
+		@include span-columns(10);
+		@include shift(1);
+
 		height:150px;
-		border:1px solid #222;
+		position:relative;
 
 		.ratings{
+			position:absolute;
+			bottom:10px;
+			left:35px;
 			li{
 				display: inline-block;
 
@@ -22,6 +36,12 @@
 					font-size:18px;
 				}
 			}
+		}
+
+		.knowledge{
+			text-align:center;
+			font-style:italic;
+			color:#AAA;
 		}
 	}
 }

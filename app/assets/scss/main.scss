@@ -40,8 +40,23 @@ html, body{
 
 .me, h1, .description, .primary-nav, .social-nav, main, .status, .admin-gateway{
 	@include outer-container;
+
+  	@include media($mobile) {
+      @include span-columns(1);
+      @include omega();
+    }
 }
 
 article{
 	@include span-columns(4);
+
+  	@include media($mobile) {
+      @include span-columns(1);
+      @include omega();
+    }
+}
+
+h2{
+	@include span-columns(12);
+	margin-bottom:30px;
 }
