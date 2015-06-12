@@ -2,7 +2,16 @@ form{
 	input, textarea{
 		padding:10px;
 		margin-bottom:10px;
-	}
+		border:1px solid #ddd;
+		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+
+		:focus:invalid{
+    		border-color: #d45252;
+		}
+
+		:valid{
+			border-color:#68b12f;
+		}
 
 	textarea{
 		height:150px;
